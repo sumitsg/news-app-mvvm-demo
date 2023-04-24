@@ -14,10 +14,10 @@ class ModelNewsArticle {
 
   factory ModelNewsArticle.fromJson(Map<String, dynamic> json) {
     return ModelNewsArticle(
-        title: json['title'],
-        publishedAt: json['publishedAt'],
-        description: json['description'],
-        url: json['url'],
-        urlToImg: json['urlToImage']);
+        title: json['title'] ?? "",
+        publishedAt: json['publishedAt'] ?? "",
+        description: json['description'] ?? "",
+        url: json['url'] ?? "",
+        urlToImg: json['urlToImage'] ?? "");
   }
 }

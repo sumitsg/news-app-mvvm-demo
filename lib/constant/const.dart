@@ -7,6 +7,9 @@ class Constants {
     return 'https://newsapi.org/v2/top-headlines?country=$country&apiKey=$apiKey';
   }
 
+  static const String noImgFound =
+      "https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg";
+
   static const Map<String, String> countries = {
     'USA': 'us',
     'India': 'in',

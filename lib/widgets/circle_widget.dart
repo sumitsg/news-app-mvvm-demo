@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:news_mvvm_demo/constant/const.dart';
 
 class CircleImage extends StatelessWidget {
   final String img;
@@ -13,7 +14,8 @@ class CircleImage extends StatelessWidget {
         return Container(
           margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 30),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(24),
+            border: Border.all(color: Colors.black87, width: 1),
+            borderRadius: BorderRadius.circular(14),
             image: DecorationImage(
               image: imageProvider,
               fit: BoxFit.cover,
@@ -27,7 +29,7 @@ class CircleImage extends StatelessWidget {
         );
       },
       errorWidget: (context, url, error) {
-        return const Icon(Icons.error);
+        return const Icon(Icons.image_not_supported);
       },
     );
   }
