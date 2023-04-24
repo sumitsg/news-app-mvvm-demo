@@ -26,6 +26,8 @@ class ViewModel {
     final dateTime = DateFormat('yyyy-mm-ddTHH:mm:ssz')
         .parse(_modelNewsArticle.publishedAt, true);
 
-    return DateFormat.yMMMMEEEEd('en-us').format(dateTime);
+    String date = DateFormat.yMMMMEEEEd('en-us').format(dateTime);
+
+    return date;
   }
 }

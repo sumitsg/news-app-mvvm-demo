@@ -49,13 +49,13 @@ class _MainScreenState extends State<MainScreen> {
       ),
       body: SafeArea(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const Padding(
               padding: EdgeInsets.all(10),
               child: Text(
                 'Headlines',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.w700),
               ),
             ),
             Expanded(child: NewsScreen(article: listViewModel.article))
